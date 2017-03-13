@@ -39,6 +39,12 @@ python3 CountMeUp.py
 
 Go to the provided web link and enjoy :)
 
-Note: There is a lot of Tests scenarios in the test folder and in case that you and to run to see other solutions you delete the created database running in the terminal:
+Extra Notes: 
+
+- There are many tests scenarios in the tests folder, some of them are to be executed in the IDLE or terminal Shell and the other using the link. Note that not all of them may be working or may not get the right ouput, I used for tests pruposes.
+
+- In case that you wanna try to run to see other solutions, you have to delete the database crated by running in the terminal:
 
 python3 deleteDataBase.py
+
+And then refresh the webpage.
