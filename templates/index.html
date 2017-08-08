@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Libraries -->
+		<script type="text/javascript" src="{{ url_for('static', filename='angular.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='fusioncharts.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='fusioncharts.charts.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='angular-fusioncharts.min.js') }}"></script>
+		<!-- Link for the style sheet and app js -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
+		<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+	</head>
+	{% raw %}
+	<body ng-app="chartApp">
+		<header>
+			<h1 class="text-center">Elections 2017</h1>
+			<h2 class="text-center">– Live Results –</h2>
+		</header>
+		<div ng-controller="MyController" class="text-center">
+			<fusioncharts
+				width= "50%"
+        		height= "400"
+        		type= "bar2d"
+        		dataFormat= "json"
+        		dataSource= "{{dataSource}}">
+    		</fusioncharts>
+		</div>
+		
+	</body>
+	{% endraw %}
+</html>
